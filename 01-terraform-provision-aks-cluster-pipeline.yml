@@ -1,9 +1,8 @@
 trigger:
 - master
-resources:
-- repo: self
-pool:
-  vmImage: ubuntu-latest
+
+pool: MyPool
+  # vmImage: ubuntu-latest
 
 # Stage-1: Terraform Validate Stage
 ## Step-1: Publish Artifacts to Pipeline (Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. )
